@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background: rgb(245, 245, 245);
+    overflow: hidden;
+}
+
+#root form {
+	background-image: linear-gradient(to top, rgba(205, 156, 242, 0.40) 0%, rgba(246, 255, 255, 0.71) 100%);
+	/* box-shadow: 0 15px 30px 1px rgba(128, 128, 128, 0.31); */
+	text-align: center;
+	border-radius: 5px;
+	margin: 1em auto;
+	background: rgba(255, 255, 255, 0.95);
+	/* height: 300px; */
+	width: 480px;
+	padding: 2em;
+	
+	/* position: fixed; */
+	/* bottom: 0; */
+	/* right: 0; */
+	/* left: 0; */
+	/* top: 0; */
+}
+
+#root p {
+	/* font-family: 'Farsan', cursive; */
+	margin: 0.5em;
+	font-size: 1.3em;
+	color: #7d7d7d;
+}
+
+#root input {
+/* 	background: rgba(255, 13, 254, 0.90); */
+    width: 210px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 7px;
+    margin: 0.5em;
+    background: #eee;
+    padding: 1em 2em;
+    outline: none;
+    border: none;
+    color: #222;
+    transition: 0.3s linear;
+}
+::placeholder{color: #999;}
+#root input:focus {background: rgba(0, 0, 333, 0.10);}
+
+#root button {
+	background-image: linear-gradient(to left, rgba(216, 137, 178, 0.75) 0%, rgba(144, 146, 214, 0.86) 100%);
+	/* box-shadow: 0 9px 25px -5px #df91fb; */
+	/* font-family: 'Abel', sans-serif; */
+	padding: 0.5em 1.9em;
+	margin: 2.3em 0 0 0;
+	border-radius: 7px;
+	font-size: 1.4em;
+	cursor: pointer;
+	color: #FFFFFF;
+	font-size: 1em;
+	outline: none;
+	border: none;
+	transition: 0.3s linear;
+
+}
+#root button:hover{transform: translatey(2px);}
+#root button:active{transform: translatey(5px);}
+
+.todo-app__root {
+    margin: 0 auto;
+    /* margin-top: 7em; */
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1em;
+    color: #4d4d4d;
+    font-weight: 300;
+}
+
+.todo-app__header {
+    margin-bottom: 1em;
+}
+
+.todo-app__title {
+    font-size: 100px;
+    font-weight: 100;
+    text-align: center;
+    color: rgba(175, 47, 47, 0.15);
+    margin: 0;
+    padding: 0;
+}
+
+.todo-app__main {
+    width: 100%;
+}
